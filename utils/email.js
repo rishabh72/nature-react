@@ -12,7 +12,7 @@ module.exports = class Email {
     this.from = 'Rishabh Soni from <sonirishabh72250@gmail.com>';
   }
   newTransport() {
-    if (process.env.NODE_ENV !== 'production') {
+    if (process.env.NODE_ENV === 'production') {
       return nodemailer.createTransport({
         service: 'SendGrid',
         auth: {

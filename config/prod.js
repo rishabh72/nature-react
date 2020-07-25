@@ -1,1 +1,12 @@
-module.exports = {};
+module.exports = {
+  DATABASE: process.env.DATABASE,
+  DATABASE_PASSWORD: process.env.DATABASE_PASSWORD,
+
+  JWT_SECRET: process.env.JWT_SECRET,
+  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN,
+  JWT_COOKIE_EXPIRES_IN: process.env.JWT_COOKIE_EXPIRES_IN,
+
+  SENDGRID_USERNAME: process.env.SENDGRID_USERNAME,
+  SENDGRID_PASSWORD: process.env.SENDGRID_PASSWORD,
+  STRIPE_SECRET_KEY: process.env.STRIPE_SECRET_KEY,
+};
